@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../css/shang/header.css">
+	<link rel="stylesheet" href="../../css/shang/footer.css">
+	<link rel="stylesheet" href="../../css/shang/production.css">
+	<link rel="stylesheet" href="../../css/shang/main-bar-sort.css">
+
+	<script type="text/javascript" src="../../js/shang/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../../js/shang/main-bar-sort.js"></script>
+	<script type="text/javascript" src="../../js/shang/header.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<title>production</title>
+</head>
+<body><script>
+$(function(){
+	var a = document.body.clientWidth;
+	$('#header-main').css('width', a);	
+	if(a<1300){
+		$('header-main-logo').css('width', 50);
+		$('#header-main-buycar').css('width', 30);
+		$('#search').css('width',a/6);
+		$('#header-main-search').css('width',a/4);
+		$('.search').css('width',a/18);
+		$('.header-bottom-main').css('width',a/10);
+
+	}
+});
+$.ajax({
+	url: 'http://duolaimon.cn/shop/varieties/0?pageSize=6',
+	type: 'GET',
+	dataType: '',
+	data: {},
+	success:function(data){
+		for(let i=0;i<data.totalPage-1;i++){
+			$('#main-bottom-span').append('<span id="two">'+(i+2)+'</span>');
+		}
+	}
+});
+
+$.ajax({
+	url: 'http://duolaimon.cn/shop/varieties/0?pageSize=6&pageNumber=1',
+	type: 'GET',
+	dataType: '',
+	data: {},
+	success:function(data){
+		for(let i=0;i<data.dataList.length;i++){
+			
+			$('.main-result ul').append('<div class="main-result-border"><li><a href=""><img class="result-img" src=""><span class="price"></span><span class="result-name"></span></a></li></div>')
+		}
+		var oresultImg=document.getElementsByClassName('result-img');
+		var oprice=document.getElementsByClassName('price');
+		var oresult=document.getElementsByClassName('result-name');
+		for(let i=0;i<data.dataList.length;i++){
+			oprice[i].innerHTML="$"+data.dataList[i].commodityPrice;
+			oresult[i].innerHTML=data.dataList[i].commodityName;
+			oresultImg[i].setAttribute("src","http://duolaimon.cn"+data.dataList[i].commodityPicture);
+			$('.main-result-border a').attr('href', '../bowei/index.html?id='+data.dataList[i].commodityID);
+		}
+
+
+
+		// for(let i=0;i<30;i++){
+		// 	console.log(data.pages[0].dataList[i])
+		// 	if(i<15){
+			// oprice[i].innerHTML="$"+data.pages[0].dataList[i].commodityPrice;
+			// oresult[i].innerHTML=data.pages[0].dataList[i].commodityName;
+			// oresultImg[i].setAttribute("src","http://duolaimon.cn"+data.pages[0].dataList[i].commodityPicture);
+		// 	}else if(i>=15){
+		// 	oprice[i].innerHTML="$"+data.pages[1].dataList[i-15].commodityPrice;
+		// 	oresult[i].innerHTML=data.pages[1].dataList[i-15].commodityName;
+		// 	oresultImg[i].setAttribute("src","http://duolaimon.cn"+data.pages[1].dataList[i-15].commodityPicture);
+		// 	}
+
+		// }
+		
+	}
+});
+window.onload=function(){
+	var oborder=document.getElementsByClassName('main-result-border');
+	var oliststyle=document.getElementById('liststyle');
+	var opicstyle=document.getElementById('picstyle');
+	oliststyle.onclick=function(){
+		$('.main-result div').css('width', '1000');
+		$('.price').css(
+			{'font-size':'20px',
+			'float':'left',
+			'display':'block',
+			'margin-left':'30px'
+		});
+		$('.result-name').css({
+			'font-size': '20px',
+			'color':'red'
+		});;
+	};
+	opicstyle.onclick=function(){
+		window.location.reload();
+	}
+}
+
+	</script>
+	<div id="header" class="header">
+		<div id="header-top">
+			<div id="header-top-left">
+				<span>hi欢迎光临快又省冷鲜商城!</span>
+				<a href="../bowen/kysSign_in.html">登陆</a>
+				<a href="../bowen/kysSign_up.html">注册</a>
+				
+				<div id="header-top-right">
+					<a href="../gang/me.html">会员中心</a>
+					<a href="">App下载</a>
+					<a href="../yue/AboutUs.html">关于我们</a>
+					<span>客服热线：400-023-4997</span>
+				</div>
+			</div>
+		</div>
+		<div id="header-main">
+			
+			<img id="header-main-logo" src="../../image/logo.jpg" alt="快又省">
+			
+			<div id="header-main-search">
+			<form action="">		
+				<input type="text" id="search">
+				<input type="submit" value="搜索" class="search">
+			</form>
+			</div>
+			<div id="header-main-buycar">
+				<img src="../../image/buycar.jpg" alt="购物车">
+			</div>	
+		</div>
+		<div id="header-bottom">
+			<div id="header-bottom-main">
+				<ul>
+					<li class="header-bottom-main">全部商品分类</li>
+					<li class="header-bottom-main"><a href="../index.html">首页</a></li>
+					<li class="header-bottom-main haveitem">
+						各种各样食品
+						<ul>
+							<li><a href="production-qinlei.html">禽类冻货专区</a></li>
+							<li><a href="production-chulei.html">畜类冻货专区</a></li>
+							<li><a href="production-haixian.html">生鲜水产专区</a></li>
+							<li><a href="production-donghuo.html">熟食速冻专区</a></li>
+						</ul>
+					</li>
+					<li class="header-bottom-main"><a href="../bowen/kysActivity.html">冷库招租</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="main">
+		<div id="main-main">
+			<div class="path"><a href="index.html">首页</a><strong>></strong>其他冻货专区</div>
+			<div class="main-productList">
+				<div class="main-productList-title">
+					<h3>筛选商品</h3>
+				</div>
+				<div class="main-productList-bar">
+					<ul>
+						<li><h4>分类:</h4></li>
+						<li><a href="">正大禽肉</a></li>
+						<li><a href="">六合禽肉</a></li>
+						<li><a href="">德翔粮鸡</a></li>
+						<li><a href="">鸭子</a></li>
+						<li><a href="">鸭头</a></li>
+						<li><a href="">鸭脖</a></li>
+						<li><a href="">鸭锁骨</a></li>
+						<li><a href="">鸭肠</a></li>
+						<li><a href="">鸭翅</a></li>
+						<li><a href="">鸭食管</a></li>
+						<li><a href="">其他鸭类食品</a></li>
+						<li><a href="">鸭爪</a></li>
+						<li><a href="">鸡分割产品</a></li>
+						<li><a href="">白条鸡</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-bar">
+					<div class="main-bar-layout">
+						<span>布局：</span>
+						<button id="liststyle">列表布局</button>
+						<button id="picstyle">缩略图布局</button>
+					
+					</div>
+					<div class="select-bar-title">
+							<div class="select-bar"><span>销量</span><img src="../../image/down.png"></div>
+							<div class="select-bar"><span>价格</span><img src="../../image/down.png"></div>
+							<div class="select-bar"><span>评分<span><img src="../../image/down.png"></div>
+							
+					</div>		
+					<div class="main-bar-tabs">
+						<span>只查看</span>
+						<input type="radio" name="radio" value="热销"><strong>热销</strong>
+						<input type="radio" name="radio" value="最新"><strong>最新</strong>
+					</div>
+			</div>
+			<div class="main-result">
+				<ul>
+				
+				</ul>
+				
+			</div>
+		
+			<div id="main-bottom" class="main-bottom">
+					<button id="prev" ><</button>
+						<span id="main-bottom-span">
+							<span id="one" class="checked">1</span>
+						</span>
+					<button id="next" >></button>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="footer" class="footer">
+		<div id="footer-main">
+			<div class="center">
+					
+				<div id="footer-main-left">
+					<ul>
+						<li class="footer-title">关于我们</li>
+						<li class="footer-li"><a href="../yue/AboutUs.html#mao1">公司简介</a></li>
+						<li class="footer-li"><a href="../yue/AboutUs.html#mao2">联系方式</a></li>
+						<li class="footer-li"><a href="../yue/AboutUs.html#mao3">加盟入驻</a></li>
+					</ul>
+				</div>
+				<div id="footer-main-center">
+					<ul>
+						<li class="footer-title">客户保障</li>
+						<li class="footer-li"><a href="../yue/baozhang.html#mao1">售后服务</a></li>
+						<li class="footer-li"><a href="../yue/baozhang.html#mao2">支付方式</a></li>
+						<li class="footer-li"><a href="../yue/baozhang.html#mao3">配送区域</a></li>
+					</ul>
+				</div>
+
+				<div id="footer-main-right">
+
+					<div class="pic"><span>扫描左侧二维码</span><br/><span>下载手机APP</span><br/><a href=""><img src="../../image/ad.png" alt=""></a><a href=""><img src="../../image/iphone.png" alt=""></a></div>
+					<div class="pic">
+						<span>联系方式</span><br/>
+						<a href=""><img class="top" src="../../image/QQ.png" alt=""></a>	<a href=""><img class="top" src="../../image/wechat.png" alt=""></a>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+
+		<div id="footer-bottom">
+		<div id="footer-line"></div>Copyright@2015&nbsp;快又省商贸公司&nbsp;版权所有&nbsp;黑ICP备15004530号&nbsp;食品流通许可证SP2301061510115075</div>
+	</div>
+</body><script>
+var timer=0;
+	// $('#prev').click(function() {
+	// 	var i=timer--;
+	// 	var k=i%3;
+	// 	alert(k);
+	// 	if(k==0){
+	// 		$('#one').removeClass('checked');
+	// 		$('#two').addClass('checked');
+	// 	}
+	// 	if(k==1){
+
+	// 		$('#two').removeClass('checked');
+	// 		$('#three').addClass('checked');
+	// 	}
+	// 	if(k==2){	
+	// 		$('#three').removeClass('checked');
+	// 		$('#one').addClass('checked');
+			
+	// 	}
+		
+	// });
+	$('#next').click(function() {
+		
+			 i = ++timer;
+			 k=i%3;
+			if(k==1){
+				$('#one').removeClass('checked');
+				$('#three').removeClass('checked');
+				$('#two').addClass('checked');
+			}
+			if(k==2){
+				$('#one').removeClass('checked');
+				$('#two').removeClass('checked');
+				$('#three').addClass('checked');
+			}
+			if(k==0){	
+				$('#three').removeClass('checked');
+				$('#two').removeClass('checked');
+				$('#one').addClass('checked');
+		
+			}
+				
+			 text = $('.checked').text();
+	$.ajax({
+		url: 'http://duolaimon.cn/shop/varieties/0?pageSize=6&pageNumber='+text,
+		type: 'GET',
+		dataType: '',
+		data: {},
+		success:function(data){
+			if($('.checked').text()==2){//ajax请求分页，目前固定两页
+				//可以更换请求url然后成功分页
+				$('#next').attr('disabled','disabled');
+			}else{
+				$('#next').removeAttr('disabled');
+			}
+			$('.main-result div').remove();
+			
+			for(let i=0;i<data.dataList.length;i++){
+				
+				$('.main-result ul').append('<div class="main-result-border"><li><a href=""><img class="result-img" src=""><span class="price"></span><span class="result-name"></span></a></li></div>')
+			}
+			var oresultImg=document.getElementsByClassName('result-img');
+			var oprice=document.getElementsByClassName('price');
+			var oresult=document.getElementsByClassName('result-name');
+			for(let i=0;i<data.dataList.length;i++){
+				oprice[i].innerHTML="$"+data.dataList[i].commodityPrice;
+				oresult[i].innerHTML=data.dataList[i].commodityName;
+				oresultImg[i].setAttribute("src","http://duolaimon.cn"+data.dataList[i].commodityPicture);
+			}
+
+
+
+		// for(let i=0;i<30;i++){
+		// 	console.log(data.pages[0].dataList[i])
+		// 	if(i<15){
+			// oprice[i].innerHTML="$"+data.pages[0].dataList[i].commodityPrice;
+			// oresult[i].innerHTML=data.pages[0].dataList[i].commodityName;
+			// oresultImg[i].setAttribute("src","http://duolaimon.cn"+data.pages[0].dataList[i].commodityPicture);
+		// 	}else if(i>=15){
+		// 	oprice[i].innerHTML="$"+data.pages[1].dataList[i-15].commodityPrice;
+		// 	oresult[i].innerHTML=data.pages[1].dataList[i-15].commodityName;
+		// 	oresultImg[i].setAttribute("src","http://duolaimon.cn"+data.pages[1].dataList[i-15].commodityPicture);
+		// 	}
+
+		// }
+		
+	}
+});
+			
+			
+	});
+	$('#prev').click(function() {
+		if(i>0){	
+			i = --timer;
+			k=i%3;
+			if(k==0){
+				$('#two').removeClass('checked');
+				$('#three').removeClass('checked');
+				$('#one').addClass('checked');
+			}
+			if(k==1){
+				$('#one').removeClass('checked');	
+				$('#three').removeClass('checked');
+				$('#two').addClass('checked');
+			}
+			if(k==2){
+				$('#two').removeClass('checked');
+				$('#one').removeClass('checked');
+				$('#three').addClass('checked');
+			}
+			text = $('.checked').text();
+	$.ajax({
+		url: 'http://duolaimon.cn/shop/varieties/0?pageSize=6&pageNumber='+text,
+		type: 'GET',
+		dataType: '',
+		data: {},
+		success:function(data){
+			if($('.checked').text()==2){//ajax请求分页，目前固定两页
+				//可以更换请求url然后成功分页
+				$('#next').attr('disabled','disabled');
+			}else{
+				$('#next').removeAttr('disabled');
+			}
+			$('.main-result div').remove();
+			
+			for(let i=0;i<data.dataList.length;i++){
+				
+				$('.main-result ul').append('<div class="main-result-border"><li><a href=""><img class="result-img" src=""><span class="price"></span><span class="result-name"></span></a></li></div>')
+			}
+			var oresultImg=document.getElementsByClassName('result-img');
+			var oprice=document.getElementsByClassName('price');
+			var oresult=document.getElementsByClassName('result-name');
+			for(let i=0;i<data.dataList.length;i++){
+				oprice[i].innerHTML="$"+data.dataList[i].commodityPrice;
+				oresult[i].innerHTML=data.dataList[i].commodityName;
+				oresultImg[i].setAttribute("src","http://duolaimon.cn"+data.dataList[i].commodityPicture);
+			}
+
+
+
+		// for(let i=0;i<30;i++){
+		// 	console.log(data.pages[0].dataList[i])
+		// 	if(i<15){
+			// oprice[i].innerHTML="$"+data.pages[0].dataList[i].commodityPrice;
+			// oresult[i].innerHTML=data.pages[0].dataList[i].commodityName;
+			// oresultImg[i].setAttribute("src","http://duolaimon.cn"+data.pages[0].dataList[i].commodityPicture);
+		// 	}else if(i>=15){
+		// 	oprice[i].innerHTML="$"+data.pages[1].dataList[i-15].commodityPrice;
+		// 	oresult[i].innerHTML=data.pages[1].dataList[i-15].commodityName;
+		// 	oresultImg[i].setAttribute("src","http://duolaimon.cn"+data.pages[1].dataList[i-15].commodityPicture);
+		// 	}
+
+		// }
+		
+	}
+});
+		
+		}
+	});
+</script>
+</html>

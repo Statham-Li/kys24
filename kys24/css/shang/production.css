@@ -1,0 +1,148 @@
+ *{
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ #main{
+
+ }
+#main-main{
+	margin: 0 auto;
+	width: 1200px;
+}
+ 
+ .path{
+ 	margin-left: 20px;
+ 	margin-top: 20px;
+ 	height: 20px;
+	border: 1px #ddd solid;
+	font-size: 13px;
+	line-height: 20px;
+ 	color:#F16969;
+ 	padding: 5px;
+ 	border-radius: 5px;
+
+ }
+ .path strong{
+ 	font-weight: bolder;
+ 	font-size: 20px;
+ 	color: #ddd;
+ }
+ .path a{
+ 	margin: 10px;
+ 	text-decoration: none;
+ 	color: black;
+ }
+ .main-productList{
+
+ 	margin-left: 20px;
+ 	height: 92px;
+ 	width: 1200px;
+ 	border: 1px #ddd solid;
+	margin-top: 15px;
+	border-radius: 5px;
+ }
+ .main-productList h3{
+ 	margin: 10px;border-bottom: 1px #ddd solid;
+ }
+ .main-productList-bar li{
+	float: left;
+	list-style:none;
+	margin: 10px;
+ }
+
+ .main-productList-bar a{
+ 	text-decoration: none;
+ 	color: #848484;
+ }
+ .main-bar{
+
+ 	margin-left: 20px;
+ 	height: 130px;
+ 	width: 1200px;
+ 	border: 1px #ddd solid;
+ 	margin-top: 15px;
+ 	border-radius: 5px;
+ }
+ .main-bar-layout{
+ 	height: 43px;
+	border-bottom: 1px #ddd dashed;
+ }
+ .main-bar-layout span{
+	line-height: 43px;
+ }
+ .main-bar-layout button{
+ 	outline: none;margin: 5px;
+ 	border-radius: 15px;
+ 	width: 90px;
+ 	height: 30px;
+ 	cursor: pointer;
+	background: #ddd;
+ }
+ .main-bar-layout button:hover{
+ 	background: #AEAEAE;
+ 	transition: 1s;
+ }
+ .main-bar-sort{
+ 	height: 43px;
+ 	border-bottom: 1px #ddd dashed;
+ }
+ .main-bar-tabs{
+ 	height: 40px;
+	line-height: 40px;
+	margin: 5px;
+	font-size: 15px;
+ }
+ .main-bar-tabs input{
+ 	outline: none;
+ }
+ .main-result{/* 
+ 	border: 1px black solid; */
+ 	/* height: 1200px; */
+ 	margin-left: 30px; 
+ 	height: 250px;
+ }
+ .main-result li{
+ 	
+ 	list-style: none;
+ }
+.main-result li:hover{
+ 	box-shadow:2px 2px 1px #c4c4c4;
+ 	border: 1px solid #ddd; 
+
+ }
+ .main-result a{
+ }
+ .main-result img{
+ 	width: 170px;
+ 	height: 170px;
+ 	margin: 10px;
+ 	display: block;
+ }
+ .main-result span{
+ 	font-size: 16px;
+ 	display: block;
+ 	text-align: center;
+ }
+ .main-result ul{
+ 	width: 1200px;
+
+
+ }
+ .main-result-border{
+ 	float: left;
+ 	height: 250px;
+ 	width: 180px;
+ }
+ .main-bottom{
+ 	height: 50px;
+ 	width: 200px;
+ 	float: right;
+ }
+ .main-bottom button{
+	width: 50px;
+	height: 30px;
+ }
+ .checked{
+ 	color: red;
+ }
+  

@@ -1,0 +1,38 @@
+.container{
+	height: 1200px;
+	margin: 0 auto;
+}
+.fuwu-title{
+	font-size: 15px;
+	font-weight: bold;
+	font-family: "黑体";
+	margin-top:15px; 
+	margin-bottom: 10px; 
+}
+.fuwu-hr{
+	background: #ddd;
+	width: 100%;
+	height:1px;
+}
+.fuwu-context{
+	width: 100%;
+	height: 1100px;
+	margin-top:10px;
+	border:#ddd solid 1px; 
+}
+.bar{
+	width: 100%;
+	height: 30px;
+	background: #8FC31F;
+	margin-bottom: 20px;
+}
+.bar a{
+	font-size: 15px;
+	color: #fff;
+	padding-top:5px; 
+	margin-left: 2px; 
+	line-height: 30px;
+}
+.bar2{
+	margin-top: 20px; 
+}

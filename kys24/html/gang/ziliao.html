@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>个人资料</title>
+	<link rel="stylesheet" type="text/css" href="../../css/gang/me.css">
+	<link rel="stylesheet" type="text/css" href="../../css/gang/header.css">
+	<link rel="stylesheet" type="text/css" href="../../css/gang/footer.css">
+	<script type="text/javascript" src="../../js/gang/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../../js/gang/me.js"></script>
+	<script type="text/javascript" src="../../js/gang/header.js"></script>
+</head>
+<body>
+	<header id="header" class="header">
+		<div id="header-top">
+			<div id="header-top-left">
+				<span>hi欢迎光临快又省冷鲜商城!</span>
+				<a href="../bowen/kysSign_in.html">登陆</a>
+				<a href="../bowen/kysSign_up.html">注册</a>
+				
+				<div id="header-top-right">
+					<a href="./me.html">会员中心</a>
+					<a href="">App下载</a>
+					<a href="../yue/AboutUs.html">关于我们</a>
+					<span>客服热线：400-023-4997</span>
+				</div>
+			</div>
+		</div>
+		<div id="header-main">
+			
+			<img id="header-main-logo" src="../../image/logo.jpg" alt="快又省">
+			
+			<div id="header-main-search">
+			<form action="">		
+				<input type="text" id="search">
+				<input type="submit" value="搜索" class="search">
+			</form>
+			</div>
+			<div id="header-main-buycar">
+				<img src="../../image/buycar.jpg" alt="购物车">
+			</div>	
+		</div>
+		<div id="header-bottom">
+			<div id="header-bottom-main">
+				<div id="header-bottom-main-ul">
+				
+				<ul>
+					<li class="header-bottom-main">全部商品分类</li>
+					<li class="header-bottom-main"><a href="../index.html">首页</a></li>
+					<li class="header-bottom-main haveitem">
+						各种各样食品
+						<ul>
+							<li><a href="../shang/production-qinlei.html">禽类冻货专区</a></li>
+							<li><a href="../shang/production-chulei.html">畜类冻货专区</a></li>
+							<li><a href="../shang/production-haixian.html">生鲜水产专区</a></li>
+							<li><a href="../shang/production-donghuo.html">熟食速冻专区</a></li>
+						</ul>
+					</li>
+					<li class="header-bottom-main"><a href="../bowen/kysActivity.html">冷库招租</a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="main">
+		<aside>
+			<p>用户中心</p>
+			<ul>
+				<li><a href="me.html">我的订单</a></li>
+				<li class="active"><a href="ziliao.html">个人资料</a></li>
+				<li><a href="password.html">修改密码</a></li>
+				<li><a href="dizhi.html">收货地址</a></li>
+			</ul>
+		</aside>
+		
+		<div class="right">
+			<div class="ziliao">
+				<form class="form2">
+					<img src="http://placeholder.qiniudn.com/100x100" class="zlimg">
+					<div class="form">
+						<label>姓名</label><input type="text" id="uesrName" name="uesrName">
+					</div>
+					<div class="form">
+						<label>联系电话</label><input type="tel" id="userPhone" name="userPhone">
+					</div>
+					<input type="button" id="btn1" name="" class="submit2" value="修 改">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer" class="footer">
+		<div id="footer-main">
+			<div class="center">
+					
+				<div id="footer-main-left">
+					<ul>
+						<li class="footer-title">关于我们</li>
+						<li class="footer-li"><a href="../yue/AboutUs.html#mao1">公司简介</a></li>
+						<li class="footer-li"><a href="../yue/AboutUs.html#mao2">联系方式</a></li>
+						<li class="footer-li"><a href="../yue/AboutUs.html#mao3">加盟入驻</a></li>
+					</ul>
+				</div>
+				<div id="footer-main-center">
+					<ul>
+						<li class="footer-title">客户保障</li>
+						<li class="footer-li"><a href="../yue/baozhang.html#mao1">售后服务</a></li>
+						<li class="footer-li"><a href="../yue/baozhang.html#mao2">支付方式</a></li>
+						<li class="footer-li"><a href="../yue/baozhang.html#mao3">配送区域</a></li>
+					</ul>
+				</div>
+
+				<div id="footer-main-right">
+
+					<div class="pic"><span>扫描左侧二维码</span><br/><span>下载手机APP</span><br/><a href=""><img src="../../image/ad.png" alt=""></a><a href=""><img src="../../image/iphone.png" alt=""></a></div>
+					<div class="pic">
+						<span>联系方式</span><br/>
+						<a href=""><img class="top" src="../../image/QQ.png" alt=""></a>	<a href=""><img class="top" src="../../image/wechat.png" alt=""></a>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+
+		<div id="footer-bottom">
+		<div id="footer-line"></div>Copyright@2015&nbsp;快又省商贸公司&nbsp;版权所有&nbsp;黑ICP备15004530号&nbsp;食品流通许可证SP2301061510115075</div>
+	</div>	
+
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var oBtn1 = document.getElementById('btn1');
+			var oUserName = document.getElementById('uesrName');
+			var oUserId = document.getElementById('uesrId');
+			var oUserPhone = document.getElementById('userPhone');
+
+			//获取指定名称的cookie的值
+			// function getCookie(objName){ 
+			// 	var arrStr = document.cookie.split(";"); 
+			// 	for(var i = 0;i < arrStr.length;i ++){ 
+			// 		var temp = arrStr[i].split("="); 
+			// 		if(temp[0] == objName)
+			// 			return unescape(temp[1]); 
+			// 		} 
+			// }
+			// var userId = getCookie('userId');
+			// var userPhone = getCookie('userPhone');
+			// var userPassword = getCookie('userPassword');
+
+			// 登录
+			// function getDataFun(){
+		 //    	$.ajax({
+		 //    		url:"http://demoncirno.cn/kys24/userController/login",
+		 //    		type:'POST',
+		 //    		data: 'userPhone="+userPhone+"&userPassword="+userPassword+"'
+		 //    		success: function(data1){
+		 //    			if(data1 == 1){
+		 //    				// alert("已登录");
+		 //    				// todo
+		 //    			}else{
+		 //    				// alert("未登录");
+		 //    				// todo
+		 //    			}
+		 //    	}})
+		 //    }
+		 //    getDataFun();
+
+			// 进入页面自动获取相关数据
+			var xhr = null;
+			try {
+				xhr = new XMLHttpRequest();
+			} catch (e) {
+				xhr = new ActiveXObject('Microsoft.XMLHTTP');
+			}
+			xhr.open('get','http://demoncirno.cn/kys24/userController/users/1',true);
+			xhr.send();
+			xhr.onreadystatechange = function() {
+				if ( xhr.readyState == 4 ) {
+					if ( xhr.status == 200 ) {
+						var data = JSON.parse( xhr.responseText );
+						oUserName.value = data.select.userName;
+						oUserPhone.value = data.select.userPhone;
+					} else {
+						alert('出错了,Err：' + xhr.status);
+					}
+				}
+			};
+
+			// 点击修改提交数据
+			oBtn1.onclick = function(){
+				var postData = {
+					"userId": "1",
+				    "userName": oUserName.value,
+				    "userPhone": oUserPhone.value
+				};
+
+				// 转成post需要的字符串
+				postData = (function(obj){ 
+				    var str = "";
+				    for(var prop in obj){
+				        str += prop + "=" + obj[prop] + "&"
+				    }
+				    return str;
+				})(postData);
+
+				console.log(postData);
+
+				xhr.open('post', 'http://demoncirno.cn/kys24/userController/update', 'true');
+				xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+				xhr.send(postData);
+				xhr.onreadystatechange = function(){
+				    if (xhr.readyState == 4) {
+				        if (xhr.status == 200) {
+				            var data = JSON.parse( xhr.responseText );
+				        	var code = data.upte;
+				            if(code == 1){
+				            	alert("修改成功");
+				            }else if(code == 0){
+				            	alert("修改失败");
+				            }else{
+				            	alert("修改异常");
+				            }
+				        }else {
+							alert('修改失败,Err：' + xhr.status);
+						}
+				    }
+				};
+			}
+		}
+	</script>
+
+</body>
+</html>

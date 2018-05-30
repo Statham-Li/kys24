@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../../css/bowen/sign_up.css">
+<script type="text/javascript" src="../../js/bowen/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../../js/bowen/jquery.validate.js"></script>
+<script type="text/javascript" src="../../js/bowen/messages_zh.js"></script>
+
+	<title>快又省用户注册</title>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<img src="../../image/logo.png">
+	</div>
+	<div id="wrap_1">
+		<form id="sign_up_form">
+			<h3>账号注册</h3>
+			<div id="content">
+			<div id="content_1">
+				<div>
+					<span>用&nbsp户&nbsp名:</span>
+					<input type="text" name="username" id="username" class="required">
+				</div>
+				<div>
+					<span>设置密码:</span>
+					<input type="password" name="password" id="password" class="required" rangelength="6,16">
+				</div>
+				<div>
+					<span>确认密码:</span>
+					<input type="password" name="confine" id="confine" class="required" equalTo="#password" >
+				</div>
+				<div>
+					<span>店铺名称:</span>
+					<input type="text" name="shopname" id="shopname" class="required"  >
+				</div>
+				<div>
+					<span>地&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp址:</span>
+					<input type="text" name="address" id="address" class="required">
+				</div>
+			</div>
+			<div id="content_2">
+				<div>
+					<span>联&nbsp系&nbsp人:</span>
+					<input type="text" name="contact" id="contact" class="required">
+				</div>
+				<div>
+					<span>联系电话:</span>
+					<input type="text" name="phone" id="phone" class="required number"  minlength="11" maxlength="11" >
+				</div>
+				<div>
+					<span>短信验证码:</span>
+					<input type="text" name="message" id="message" class="required number" minlength="5" maxlength="5" >
+					<input id="btnSendCode" type="button" value="发送验证码" onclick="sendMessage()" /> 
+				</div>
+				
+				<input type="button" name="submit" value="提交注册" id="sub" disabled="true">
+				<div id="radio">
+				<input type="checkbox" name="check" >注册表示同意<a href="#">《快又省用户注册协议》</a>
+				</div>
+			</div>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="foot">
+	<hr>
+	<p>Copyright@2015&nbsp;快又省商贸公司&nbsp;版权所有&nbsp;黑ICP备15004530号&nbsp;食品流通许可证SP2301061510115075</p>
+</div>
+<script type="text/javascript" src="../../js/bowen/sign_up.js"></script>
+</body>
+</html>

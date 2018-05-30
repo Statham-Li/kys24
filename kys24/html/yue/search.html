@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="../../css/yue/header.css">
+<link rel="stylesheet" type="text/css" href="../../css/yue/search.css">
+<link rel="stylesheet" type="text/css" href="../../css/yue/footer.css">
+</style>
+<script type="text/javascript" src="../../js/yue/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../../js/yue/search.js"></script>
+<script type="text/javascript" src="../../js/yue/ajax.js"></script>
+<script type="text/javascript" src="../../js/yue/search-ajax.js"></script> 
+<script type="text/javascript" src="../../js/yue/header.js"></script> 
+
+<script>
+$(function(){
+	//loaded();
+	
+var a = document.body.clientWidth;
+	$('#header-main').css('width',a);	
+	if(a<1263){
+		$('#search').css('width',a/6);
+		$('#header-main-search').css('width',a/6);
+		$('.search').css('width',a/6);
+		$('.header-bottom-main').css('width',a/8);
+
+	}
+	function Wid(blank){
+		var footW = $("#footer").width()-2*blank;
+		$("#footer-main").css({
+			"width":footW+'px'
+		});
+	}
+	Wid(220);
+});
+	</script>
+	</script>
+</head>
+<body>
+<!-- <input type="text" name="">
+<input type="button" name="" value="搜索" id="searchbtn"> -->
+<div id="header" class="header">
+		<div id="header-top">
+			<div id="header-top-left">
+				<span>hi欢迎光临快又省冷鲜商城!</span>
+				<a href="../bowen/kysSign_in.html">登陆</a>
+				<a href="../bowen/kysSign_up.html">注册</a>
+				
+				<div id="header-top-right">
+					<a href="../gang/me.html">会员中心</a>
+					<a href="">App下载</a>
+					<a href="AboutUs.html">关于我们</a>
+					<span>客服热线：400-023-4997</span>
+				</div>
+			</div>
+		</div>
+		<div id="header-main">
+			
+			<img id="header-main-logo" src="../../image/logo.jpg" alt="快又省">
+			
+			<div id="header-main-search">
+			<form name="Description" id="search-form">
+				<input type="text" name="" id="search" name="searchKey">
+				<input type="submit" name="" class="search" value="搜索">
+			</form>
+			</div>
+			<div id="header-main-buycar">
+				<img src="../../image/buycar.jpg" alt="购物车">
+			</div>	
+		</div>
+		<div id="header-bottom">
+			<div id="header-bottom-main">
+				<div id="header-bottom-main-ul">
+				<ul>
+					<li class="header-bottom-main">全部商品分类</li>
+					<li class="header-bottom-main"><a href="../index.html">首页</a></li>
+					<li class="header-bottom-main haveitem">
+						各种各样食品
+						<ul>
+							<li><a href="../shang/production-qinlei.html">禽类冻货专区</a></li>
+							<li><a href="../shang/production-chulei.html">畜类冻货专区</a></li>
+							<li><a href="../shang/production-haixian.html">生鲜水产专区</a></li>
+							<li><a href="../shang/production-donghuo.html">熟食速冻专区</a></li>
+						</ul>
+					</li>
+					<li class="header-bottom-main"><a href="../bowen/kysActivity.html">冷库招租</a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+</div>
+<div id="_cccc"></div>
+<div class="main">
+	<div class="select">
+	<ul class="pinpai">
+		<li class="pin"><p>品牌：</p></li>
+		<li class="all">全部</li>
+	</ul>
+	</div>
+	<div class="hot">
+		<div class="hot-title">
+			<strong>热销商品</strong>
+		</div>
+		<ul>
+			<li>	
+					<img src="../../image/1.jpg">
+					<p class="descri">正大鸭子</p>
+					<p class="sale-num">
+						<span class="hot-goods-title">销售价:</span>
+						<span>￥24.20</span>
+					</p>
+					<p class="sale-num">
+						<span class="hot-goods-title">月销量:</span>
+						<span class="snum">12000</span>
+					</p>
+			</li>
+			<li>
+					<img src="../../image/1.jpg">
+					<p class="descri">正大鸭子</p>
+					<p class="sale-num">
+						<span class="hot-title">销售价:</span>
+						<span>￥24.20</span>
+					</p>
+					<p class="sale-num">
+						<span class="hot-title">月销量:</span>
+						<span class="snum">12000</span>
+					</p>
+			</li>
+			<li>	
+					<img src="../../image/1.jpg">
+					<p class="descri">正大鸭子</p>
+					<p class="sale-num">
+						<span class="hot-goods-title">销售价:</span>
+						<span>￥24.20</span>
+					</p>
+					<p class="sale-num">
+						<span class="hot-goods-title">月销量:</span>
+						<span class="snum">12000</span>
+					</p>
+			</li>
+			<li>	
+					<img src="../../image/1.jpg">
+					<p class="descri">正大鸭子</p>
+					<p class="sale-num">
+						<span class="hot-goods-title">销售价:</span>
+						<span>￥24.20</span>
+					</p>
+					<p class="sale-num">
+						<span class="hot-goods-title">月销量:</span>
+						<span class="snum">12000</span>
+					</p>
+			</li>
+			<li>	
+					<img src="../../image/1.jpg">
+					<p class="descri">正大鸭子</p>
+					<p class="sale-num">
+						<span class="hot-goods-title">销售价:</span>
+						<span>￥24.20</span>
+					</p>
+					<p class="sale-num">
+						<span class="hot-goods-title">月销量:</span>
+						<span class="snum">12000</span>
+					</p>
+			</li>
+			<li>	
+					<img src="../../image/1.jpg">
+					<p class="descri">正大鸭子</p>
+					<p class="sale-num">
+						<span class="hot-goods-title">销售价:</span>
+						<span>￥24.20</span>
+					</p>
+					<p class="sale-num">
+						<span class="hot-goods-title">月销量:</span>
+						<span class="snum">12000</span>
+					</p>
+			</li>
+		</ul>
+	</div>
+	<div class="container">	
+		<div class="select-bar-title">
+			<p>排序:</p>
+			<div class="select-bar"><span>销量</span><img src="../../image/down.png"></div>
+			<div class="select-bar"><span>价格</span><img src="../../image/down.png"></div>
+			<div class="tongji">
+				<span>共<span class="tongji-num"></span>个与“<span class="tongji-search-value"></span>”相关的商品</span>
+			</div>
+		</div>
+		<ul id="good-ul">
+			<li>
+					<!-- <div class="goods-div">
+					<div class="goods">
+						<img src="../img/1.jpg" class="goods-img">
+						<p class="goods-title">正大鸭肉</p>
+						<p class="goods-price"><span>￥</span><span>23.00</span></p>
+						<p class="goods-sale"><span>(已成交</span><span>100</span><span>笔)</span></span></p>
+					</div>
+					</div> -->
+					<p class="tishi">“加载中...莫急...”</p>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="footer" class="footer">
+		<div id="footer-main">
+			<div class="center">
+					
+				<div id="footer-main-left">
+					<ul>
+						<li class="footer-title">关于我们</li>
+						<li class="footer-li"><a href="AboutUs.html#mao1">公司简介</a></li>
+						<li class="footer-li"><a href="AboutUs.html#mao2">联系方式</a></li>
+						<li class="footer-li"><a href="AboutUs.html#mao3">加盟入驻</a></li>
+					</ul>
+				</div>
+				<div id="footer-main-center">
+					<ul>
+						<li class="footer-title">客户保障</li>
+						<li class="footer-li"><a href="./baozhang.html#mao1">售后服务</a></li>
+						<li class="footer-li"><a href="./baozhang.html#mao2">支付方式</a></li>
+						<li class="footer-li"><a href="./baozhang.html#mao3">配送区域</a></li>
+					</ul>
+				</div>
+
+				<div id="footer-main-right">
+
+					<div class="pic"><span>扫描左侧二维码</span><br/><span>下载手机APP</span><br/><a href=""><img src="../../image/ad.png" alt=""></a><a href=""><img src="../../image/iphone.png" alt=""></a></div>
+					<div class="pic">
+						<span>联系方式</span><br/>
+						<a href=""><img class="top" src="../../image/QQ.png" alt=""></a>	<a href=""><img class="top" src="../../image/wechat.png" alt=""></a>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+
+		<div id="footer-bottom">
+		<div id="footer-line"></div>Copyright@2015&nbsp;快又省商贸公司&nbsp;版权所有&nbsp;黑ICP备15004530号&nbsp;食品流通许可证SP2301061510115075</div>
+	</div>
+</body>
+</html>

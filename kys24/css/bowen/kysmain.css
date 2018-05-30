@@ -1,0 +1,296 @@
+@charset"utf-8";
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	#wrap{
+		width: 100%;
+		height:491px;
+		background: rgb(241,241,200);
+		position: relative;
+		left: 0;
+		top: 0;
+	}
+	#banner{
+		width: 1000px;
+		height: 491px;
+		position: relative;
+		margin: auto;
+	}
+	#banner img{
+		width: 800px;
+		height: 100%;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	#tab{
+		width: 100px;
+		height: 20px;
+		display: none;
+		position: absolute;
+		left: 550px;
+		top: 460px;
+	}
+	#tab ul{
+		list-style: none;
+	}
+	#tab ul li{
+		float: left;
+		width: 18px;
+		height: 18px;
+		margin: 3px;
+		text-align: center;
+		border-radius: 100%;
+		background: #999;
+		font-size: 12px;
+		color: #fff;
+		z-index: 5;
+	}
+	#nav{
+		width: 200px;
+		height: 481px;
+		padding-top: 10px;
+		background: rgb(247,247,247);
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	#nav ul{
+		list-style: none;
+	}
+	#nav ul h3{
+		margin-left: 17px;
+		color: rgb(103,144,14);
+		font-size: 17px;
+		font-family: "MicrosoftYaHeiLight" ;
+	}
+	#nav ul a{
+		text-decoration: none;
+	}
+	#nav ul li{
+		margin-left: 24px;
+		margin-top: 5px;
+		font-family: "microsoft yahei";
+		font-size: 15px;
+		color: #000;
+		font-weight: lighter;
+	}
+	#nav div:hover{
+		background: rgb(221,221,221);
+		cursor: pointer;
+	}
+	.col{
+		width: 250px;
+		height: 481px;
+		padding-top: 10px;
+		background: rgb(255,255,254);
+		opacity: 0.7;
+		position: absolute;
+		left: 200px;
+		top: 0;
+		z-index: 7;
+		display: none;
+	}
+	.col ul{
+		list-style: none;
+		text-align: center;
+	}
+	.col ul li{
+		margin-top: 10px;
+	}
+	.col ul li:hover{
+		cursor: pointer;
+	}
+	.branch{
+		width: 1004px;
+		height: 25px;
+		margin: auto;
+		text-align: left;
+		padding-top: 10px;
+		font-family: DengXian Regular;
+		font-size: 20px;
+		color: #000;
+		border-bottom: 2px solid rgb(143,195,31);
+	}
+	.branch_con{
+		width: 1004px;
+		height: 133px;
+		margin: auto;
+	}
+	.branch_con_item{
+		width: 248px;
+		height: 133px;
+		margin: 0 1.5px;
+		float: left;
+		background: #f60;
+	}
+	.branch .cata {
+		width: 450px;
+		height: 25px;
+		float: right;
+	}
+	.branch .cata a{
+		font-family: DengXian Regular;
+		font-size: 20px;
+		color: #000;
+		margin-left: 10px;
+		text-decoration: none;
+		float: right;
+	}
+	.branch_con_plus{
+		width: 1004px;
+		height: 392px;
+		position: relative;
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		/*background: #f60;*/
+	}
+	#wrap_1{
+			width: 78%;
+			height: 460px;
+			position: relative;
+			left: 200px;
+			top: 0;
+		}
+	#cont{
+		width: 100%;
+		height: 491px; 
+		position: absolute;
+	}
+	#cont img{
+		position: absolute;
+		width: 100%;
+		height: 491px;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		display: none;
+	}
+	#tab{
+		width: 240px;
+		position: absolute;
+		bottom: 10px;
+		left: 45%;
+	}
+	#tab ul li{
+		width: 18px;
+		height: 18px;
+		background: #999;
+		border-radius: 100%;
+		color:#fff;
+		font-family: 'Microsoft yahei';
+		font-size: 12px;
+		line-height:18px;
+		text-align: center;
+		float: left;
+		margin:3px;
+		list-style: none;
+		cursor: pointer;
+		z-index: 2
+	}
+	#tab ul li.on{
+		background: #f60;
+	}
+	#aleft,#aright{
+		position: absolute;
+		top: 230px;
+		width: 45px;
+		height: 45px;
+		z-index: 6;
+	}
+	#aleft{
+		background: url(../../image/left.png);
+		left:0;
+	}
+	#aright{
+		background: url(../../image/right.png);
+		right: 0;
+	}
+	#aleft,#aright:hover{
+		cursor: pointer;
+	}
+	.left_cata{
+		width: 196px;
+		height: 100%;
+		margin-right: 5.5px;
+		position: relative;
+	}
+	.left_cata img{
+		width: 100%;
+		height: 100%;
+	}
+	.cata_main{
+		width: 800px;
+		height: 392px;
+		position: absolute;
+		top: 0;
+		left: 204px;
+	}
+	.item1,.item2,.item3,.item4,.item5{
+		width: 156px;
+		height: 185px;
+		background: #f60;
+		background-size: 156px 156px;
+		position: relative;
+		margin: 5px 2px;
+		float: left;
+	}
+	.item1 .mark p,.item2 .mark p,.item3 .mark p,.item4 .mark p,.item5 .mark p{
+		height: 23px;
+		width: 55.5%;
+		padding-left: 15px;
+		padding-top: 12px;
+		font-size: 13px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		opacity: 0.7;
+		background: #fff;
+		color: #333;
+		display: block;
+	}
+	.item1 .mark p a,.item2 .mark p a,.item3 .mark p a,.item4 .mark p a,.item5 .mark p a{
+		text-decoration: none;
+		color: #000;
+	}
+	.item1 .mark span,.item2 .mark span,.item3 .mark span,.item4 .mark span,.item5 .mark span{
+		height: 23px;
+		width: 30%;
+		font-size: 16px;
+		padding-top: 12px;
+		text-align: right;
+		padding-right: 8px;
+		font-weight: bolder;
+		opacity: 0.7;
+		background: #fff;
+		position: absolute;
+		right:0;
+		bottom: 0;
+		color: #f60;
+		display: block
+	}
+	.left_cata_nav{
+		height: 138px;
+		width: 196px;
+		position: absolute;
+		top: 254px;
+		left: 0;
+	}
+	.left_cata_nav ul{
+		list-style: none;
+	}
+	.left_cata_nav ul li{
+		display: block;
+		width: 95px;
+		height: 25px;
+		font-size: 15px;
+		font-family: "microsoft yahei";
+		text-align: center;
+		float: left;
+	}
+	.left_cata_nav ul li a{
+		text-decoration: none;
+		color: #fff;
+	}

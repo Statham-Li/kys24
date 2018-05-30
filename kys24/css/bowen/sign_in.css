@@ -1,0 +1,145 @@
+@charset 'utf-8';
+*{
+	margin: 0;
+	padding: 0;
+}
+#wrap{
+	width: 100%;
+	height: 625px;
+	position: relative;
+	overflow: hidden;
+}
+#header{
+	width: 100%;
+	height: 125px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#header img{
+	width: 200px;
+	height:125px;
+	position: absolute;
+	left: 220px;
+	top: 0;
+}
+#form_1{
+	width: 20%;
+	height: 230px;
+	position: absolute;
+	background: rgb(245,245,245);
+	padding: 25px 20px;
+	left: 58.6%;
+	top: 80px;
+	z-index: 6;
+}
+#form_1 input{
+	width: 80%;
+	height: 35px;
+	border: 1px solid rgb(235,235,235);
+}
+.banner{
+	width: 100%;
+	height: 450px;
+	position: relative;
+	left: 0;
+	top: 125px;
+	background: url(../../image/bg.png);
+	background-size: 100% 150%;
+	background-position: 0 -100px;
+	overflow: hidden;
+}
+#form_1 a:nth-of-type(1){
+	font-family: arial;
+	font-size: 15px;
+	margin-top: 15px;
+	display: block;
+	float: left;
+	text-decoration: none;
+}
+#form_1 a:nth-of-type(2){
+	font-family: arial;
+	font-size: 15px;
+	margin-top: 15px;
+	display: block;
+	float: right;
+	text-decoration: none;
+}
+#form_1 label:nth-of-type(1) input{
+	background: url(../../image/user.png) no-repeat;
+	background-size: 30px 30px;
+	background-position: 2.5px 2.5px;
+	padding-left: 20%;
+}
+#form_1 label:nth-of-type(2) input{
+	background: url(../../image/password.png) no-repeat;
+	background-size: 30px 30px;
+	background-position: 2.5px 2.5px;
+	padding-left: 20%;
+}
+#form_1 input[value]{
+	color: #fff;
+	background: rgb(143,195,31);
+	width: 185px;
+	height: 35px;
+	border-radius: 3px;
+	display: block;
+	margin: 50px auto;
+	text-align: center;
+}
+#form_1 p{
+	font-family: "microsoft yahei";
+}
+#form_1 input[value]:hover{
+	cursor: pointer;
+}
+#cata{
+	width: 335px;
+	height: 100px;
+	position: absolute;
+	left: 20.8%;
+	top: 240px;
+	z-index: 5;
+}
+#cata img{
+	position: absolute;
+	left: -100%;
+	top: -225%;
+}
+
+#txt1{
+	width: 315px;
+	height: 100px;
+	position: absolute;
+	left: -17%;
+	top: 0px;
+	z-index: 5;
+}
+#txt2{
+	width: 480px;
+	height: 2px;
+	position: absolute;
+	left: -15%;
+	top: -10px;
+	z-index: 5;
+}
+#foot{
+	width: 100%;
+	height: 120px;
+	background: rgb(221,221,221);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+#foot hr{
+	width: 660px;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+}
+#foot p{
+	font-size: 12px;
+	position: absolute;
+	bottom: 50px;
+	left: 30%;
+}

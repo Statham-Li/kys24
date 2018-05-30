@@ -1,0 +1,74 @@
+body,.hot-title,.goods-price,.goods-title,.hot p{
+  margin:0px;
+  padding: 0px;
+}
+.pinpai li p,.select-bar-title p,.descri,.goods-price{
+  color: #D71249;
+}
+
+a {
+  text-decoration: none; }
+/*筛选框*/
+.select-bar-title{
+  width: 100%;
+  height:30px;
+  border-top:#ddd solid 1px;
+  border-bottom:#ddd dashed 1px;
+  background:#F9F9F9;
+}
+.select-bar{
+  float: left;
+  margin-left: 10px;
+  margin-top:4px; 
+  width: 50px;
+  height: 20px;
+  border: #000 solid 1px; 
+}
+
+/*筛选框右侧统计*/
+.tongji,.prev-page,.next-page{
+  float: right;
+}
+.tongji{
+  margin-top: 5px;
+  height:20px;
+}
+.tongji span{
+  font-size:15px;
+  color: gray;
+}
+.top-page{
+width: 30px;
+height: 20px;
+border: #ddd solid 1px;
+}
+.top-page:hover{
+  background: #EFEFEF;
+  cursor:pointer;
+}
+.prev-page a,.next-page a{
+  margin-left: 10px;
+  color: #000;
+}
+.prev-page{
+  margin-left:15px;
+}
+.next-page{
+  margin-right:15px;
+}
+.select-bar span{
+  color: #7A6666;
+  font-size:15px;
+}
+.select-bar:hover{
+  border: gray solid 1px;
+  cursor:pointer;
+}
+.select-bar span:hover{
+ color: #000;
+}
+.select-bar img{
+  float: right;
+  margin-top: 4px;
+  margin-right: 2px;
+}

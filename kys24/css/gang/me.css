@@ -1,0 +1,350 @@
+/*
+	author: Neo;
+	version: 1.0;
+	QQ: 466605091;
+	Time: 2017.5.8;
+ */
+
+/*body{
+	margin: 0 auto;
+	padding: 0;
+}*/
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.main{
+	overflow: hidden;
+	padding: 0;
+	width: 1000px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+aside{
+	background: #f0f0f0;
+	width: 20%;
+	height: 500px;
+	float: left;
+	margin-top: 16px;
+}
+
+aside p{
+	background: #669900;
+	color: white;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 0;
+}
+
+aside ul{
+	margin-left: 16px;
+}
+
+aside ul li{
+	margin-top: 8px;
+	font-size: 18px;
+	height: 40px;
+    line-height: 40px;
+    margin-left: -16px;
+    text-indent: 20px
+}
+aside ul li.active{
+	background: #690;
+	color: #fff;
+}
+.right{
+	width: 78%;
+	/*height: 500px;*/
+	float: right;
+}
+
+.right .rt{
+	height: 156px;
+	background: #f0f0f0;
+	margin-top: 16px;
+}
+
+/*.myimg{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 28px;
+	float: left;
+}*/
+
+/*.me{
+	border-right: solid 1px gray;
+	padding-right: 40px;
+	float: left;
+	margin: 28px 30px 0 0;
+}*/
+
+/*.dingkuang{
+	width: 86px;
+	height: 86px;
+	border-radius: 50%;
+	border: solid 4px #8fc31f;
+	font-size: 20px;
+	text-align: center;
+	height: 86px;
+	line-height: 86px;
+}*/
+
+.rt ul{
+	overflow: hidden;
+	padding: 10px;
+}
+
+.rt ul li{
+	float: left;
+	margin: 10px;
+}
+
+.rt ul li span{
+	margin-left: 4px;
+	font-size: 14px;
+	display: block;
+	width: 90px;
+	text-align: center;
+}
+
+.right{
+	overflow: hidden;
+}
+
+.right .rm{
+	background: #f0f0f0;
+	margin-top: 16px;
+}
+
+.right .rmt{
+	/*border: solid 1px red;*/
+	height: 40px;
+	margin-top: 10px;
+}
+
+.right .rmt ul{
+	/*border: solid 1px red;*/
+	overflow: hidden;
+	width: 50%;
+	margin-top: 0;
+	float: left;
+}
+
+.right .rmt ul li{
+	float: left;
+	margin: 8px 10px;
+}
+
+.right .rmt .dingdan{
+	float: right;
+	/*border: solid 1px red;*/
+	margin-top: 8px;
+}
+
+
+/*订单部分*/
+.rmb{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.rmb .zs{
+	height: 20px;
+	/*border: solid 1px red;*/
+}
+
+.rmb .zs .zsitem{
+	float: left;
+	margin: 0 60px;
+}
+
+.rmb .content{
+	background: white;
+	padding:0 10px;
+}
+
+#ddh{
+	margin-left: 30px;
+}
+
+.rmb .content .c1{
+	padding: 4px 0;
+	border-bottom: solid 1px gray;
+}
+
+.list{
+	border-bottom: solid 1px gray;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.list li{
+	border-right: solid 1px gray;
+	width: 19%;
+	float: left;
+	text-align: center;
+	height: 100px;
+	font-size: 20px;
+}
+
+.list li:nth-child(4){
+	border-right: none;
+}
+
+.list .li1{
+	width: 40%;
+	/*border: solid 1px red;*/
+	position: relative;
+}
+
+.li1 img{
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+.list .li1 .xq{
+	float: left;
+	width: 150px;
+	margin: 10px 0 0 10px;
+	font-size: 26px;
+	/*border: solid 1px red;*/
+}
+
+.list .li1 .price{
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+}
+
+.list .li1 .money, .sum{
+	color: red;
+}
+
+.list .speak{
+	/*color: red;*/
+}
+
+.cancel{
+	color: red;
+}
+
+/* 修改密码界面 */
+
+.gai{
+	/*border: solid 1px red;*/
+	width: 450px;
+	margin: 100px 120px;
+}
+
+.form{
+	text-align: right;
+	margin: 20px 0 0 20px;
+}
+
+.form label{
+	color: #B7BECD;
+	margin: 0 20px;
+}
+
+.form input{
+	height: 26px;
+	width: 260px;
+}
+
+.submit{
+	background: #CC3366;
+	width: 150px;
+	height: 40px;
+	border-radius: 40px;
+	border: none;
+	color: white;
+	font-size: 22px;
+	margin-left: 170px;
+	margin-top: 20px;
+}
+
+.gai{
+	padding: 120px 0 164px;
+	margin-top: 16px;
+}
+
+.rg{
+	background: #f0f0f0;
+}
+
+/* 个人资料 */
+
+.ziliao{
+	/*border: solid 1px red;*/
+	/*height: 400px;*/
+	margin-top: 16px;
+	background: #f0f0f0;
+}
+
+.zlimg{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin: 10px 0 10px 180px;
+}
+
+.form2{
+	width: 426px;
+	/*border: solid 1px red;*/
+	margin-left: 140px;
+	padding: 10px 0 22px 0;
+}
+
+.submit2{
+	background: #CC3366;
+	width: 150px;
+	height: 40px;
+	border-radius: 40px;
+	border: none;
+	color: white;
+	font-size: 22px;
+	margin-left: 170px;
+	margin-top: 20px;
+}
+
+/*收货地址*/
+
+.list .li2{
+	border-right: solid 1px #666666;
+	border-left: solid 1px #666666;
+	/*border: solid 1px black;*/
+	width: 80%;
+	height: 100px;
+	line-height: 100px;
+}
+
+.zt{
+	/*border: solid 1px red;*/
+}
+
+.ok, .speak, .xgdz, .scdz{
+	margin: 0 0 20px 20px;
+}
+
+.xgdz, .scdz{
+	margin: 10px 0 20px 0;
+}
+
+.scdz{
+	color: red;
+}
+
+footer{
+	margin-top: 20px;
+	/*background: pink;*/
+}

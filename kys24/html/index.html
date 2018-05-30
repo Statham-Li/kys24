@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>快又省首页</title>
+	<link rel="stylesheet" href="../css/bowen/header.css">
+	<link rel="stylesheet" href="../css/bowen/footer.css">
+	<link rel="stylesheet" href="../css/bowen/kysmain.css">
+	<script type="text/javascript" src="../js/bowen/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/bowen/kysmain.js"></script>
+	<script type="text/javascript" src="../js/bowen/header.js"></script>
+</head>
+<body>
+<style type="text/css">
+
+</style>
+<script>
+$(function(){
+	// var a = document.body.clientWidth;
+	// $('#header-main').css('width', a);
+	// $('#header-main>li').css('width',a);
+	// $('#footer-main').css('width', a);
+
+	$(".search").on("click",function(){
+		console.log($("#search").val())
+		window.location.href="yue/search.html?"+$("#search").val();
+	})
+});
+$(function(){
+	var a = document.body.clientWidth;
+	$('#header-main').css('width', a);	
+	if(a<1300){
+		$('header-main-logo').css('width', 50);
+		$('#header-main-buycar').css('width', 30);
+		$('#search').css('width',a/6);
+		$('#header-main-search').css('width',a/4);
+		$('.search').css('width',a/18);
+		$('.header-bottom-main').css('width',a/10);
+		$('.header-bottom-main a').css('width', a/10);
+		$('.haveitem li').css('width', a/10);
+		$('.haveitem a').css('width', a/10);
+	}
+});
+
+	</script>
+<body>
+	<div id="header" class="header">
+		<div id="header-top">
+			<div id="header-top-left">
+				<span>hi欢迎光临快又省冷鲜商城!</span>
+				<a href="bowen/kysSign_in.html">登陆</a>
+				<a href="bowen/kysSign_up.html">注册</a>
+				
+				<div id="header-top-right">
+					<a href="gang/me.html">会员中心</a>
+					<a href="">App下载</a>
+					<a href="./yue/AboutUs.html">关于我们</a>
+					<span>客服热线：400-023-4997</span>
+				</div>
+			</div>
+		</div>
+		<div id="header-main">
+			
+			<img id="header-main-logo" src="../image/logo.jpg" alt="快又省">
+			
+			<div id="header-main-search">
+			<form action="">		
+				<input type="text" id="search">
+				<input type="button" value="搜索" class="search">
+			</form>
+			</div>
+			<div id="header-main-buycar">
+				<a href="bowei/car.html"><img src="../image/buycar.jpg" alt="购物车"></a>
+			</div>	
+		</div>
+		<div id="header-bottom">
+			<div id="header-bottom-main">
+				<ul>
+					<li class="header-bottom-main active">全部商品分类</li>
+					<li class="header-bottom-main"><a href="index.html">首页</a></li>
+					
+					<li class="haveitem header-bottom-main">
+						各种各样食品
+						<ul>
+							<li><a href="./shang/production-qinlei.html">禽类冻货专区</a></li>
+							<li><a href="./shang/production-chulei.html">畜类冻货专区</a></li>
+							<li><a href="./shang/production-haixian.html">生鲜水产专区</a></li>
+							<li><a href="./shang/production-donghuo.html">熟食速冻专区</a></li>
+						</ul>
+					</li>
+					<li class="header-bottom-main"><a href="bowen/kysActivity.html">冷库招租</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="wrap">
+	<div id="banner">
+	<div id="nav">
+	<ul>
+		<div>
+		<a href="shang/production-qinlei.html">
+			<h3>禽类冻货专区</h3>
+				<li>正大禽肉</li>
+				<li>六合禽肉</li>
+				<li>众客禽肉</li>
+		</a>
+		</div>
+		<div>
+		<a href="shang/production-chulei.html">
+			<h3>畜类冻货专区</h3>
+				<li>猪肉专区</li>
+				<li>牛肉专区</li>
+				<li>羊肉专区</li>
+		</a>
+		</div>
+		<div>
+		<a href="shang/production-haixian.html">
+			<h3>生鲜水产专区</h3>
+				<li>鱼类</li>
+				<li>虾类</li>
+				<li>贝类</li>
+		</a>
+		</div>
+		<div>
+		<a href="shang/production-donghuo.html">
+			<h3>熟食速冻专区</h3>
+				<li>速冻水饺</li>
+				<li>速冻馄饨</li>
+				<li>速冻汤圆</li>
+		</a>
+		</div>
+		<div>
+			<h3>黑龙江省名优特绿色食品馆</h3>	
+		</div>
+		</ul>
+	</div>
+	<div class="col">
+		<ul>
+			<li><a>正大禽肉</a></li>
+			<li><a>六合禽肉</a></li>
+			<li><a>德翔粮鸡</a></li>
+			<li><a>鸭子</a></li>
+			<li><a>鸭头</a></li>
+			<li><a>鸭脖</a></li>
+			<li><a>鸭锁骨</a></li>
+			<li><a>鸭肠</a></li>
+		</ul>
+	</div>
+	<div class="col">
+		<ul>
+			<li>猪肉</li>
+			<li>天顺源畜肉</li>
+			<li>天正源畜肉</li>
+			<li>进口猪肉</li>
+			<li>肉串涮肚</li>
+			<li>其他品牌畜肉</li>
+		</ul>
+	</div>
+	<div class="col">
+		<ul>
+			<li>鱼类</li>
+			<li>虾类</li>
+			<li>贝类</li>
+			<li>蟹类</li>
+			<li>鱿鱼类</li>
+		</ul>
+	</div>
+<div class="col">
+		<ul>
+			<li>速冻水饺</li>
+			<li>速冻馄饨</li>
+			<li>速冻汤圆</li>
+			<li>熟食料理</li>
+			<li>其他速冻面食</li>
+		</ul>
+	</div>
+
+			<div id="wrap_1">
+					<div id="aleft"></div>
+					<div id="aright"></div>
+						<div id="cont">
+							<a href=""><img src="../image/main.png"></a>
+							<a href=""><img src="../image/lunbo1.jpg"></a>
+							<a href=""><img src="../image/lunbo2.jpg"></a>
+							<a href=""><img src="../image/lunbo3.jpg"></a>
+							<a href=""><img src="../image/lunbo4.jpg"></a>
+							<a href=""><img src="../image/lunbo5.jpg"></a>
+							<a href=""><img src="../image/lunbo6.jpg"></a>
+							
+						</div>
+						<div id="tab">
+							<ul>
+								<li>1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+								<li>5</li>
+								<li>6</li>
+								<li>7</li>
+								
+							</ul>
+						</div>
+					</div>
+    </div>
+    </div>
+    <div class="branch">
+    	品牌专区
+    </div>
+    <div class="branch_con">
+    	<a href="#"><div class="branch_con_item"></div></a>
+    	<a href="#"><div class="branch_con_item"></div></a>
+    	<a href="#"><div class="branch_con_item"></div></a>
+    	<a href="#"><div class="branch_con_item"></div></a>
+    </div>
+    
+    <!-- <div class="branch_con_pro"></div>
+    <div class="branch_con_pro"></div> -->
+    <div class="branch">
+    	禽类专区
+    	<div class="cata">
+    		<a href="">更多</a>
+			<a href="">鸡类产品</a>
+    		<a href="">鸭类产品</a>
+			<a href="">德祥</a>
+			<a href="">众客</a>
+    		<a href="">六合</a>
+    		<a href="">正大</a>	
+    	</div>
+    </div>
+    <div class="branch_con_plus">
+    	<div class="left_cata">
+    		<img src="../image/禽类.png">
+    		<div class="left_cata_nav">
+    			<ul>
+    				<li><a href="">白条鸭</a></li>
+    				<li><a href="">鸭头</a></li>
+    				<li><a href="">鸭脖</a></li>
+    				<li><a href="">翅根</a></li>
+    				<li><a href="">全翅</a></li>
+    				<li><a href="">二节翅</a></li>
+    				<li><a href="">鸭爪</a></li>
+    				<li><a href="">鸭掌</a></li>
+    				<li><a href="">鸭肝</a></li>
+    				<li><a href="">更多</a></li>
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="cata_main">
+    			<div class="item1"><div class="mark"><p><a href=""></a></p><span>￥90</span></div></div>
+    			<div class="item1"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item1"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item1"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item1"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item1"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item1"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item1"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item1"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item1"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    		</div>
+    </div>
+    <div class="branch">
+    	畜类专区
+    	<div class="cata">
+    		<a href="">更多</a>
+			<a href="">羊肉</a>
+    		<a href="">牛肉</a>
+			<a href="">猪肉</a>
+    	</div>
+    </div>
+    <div class="branch_con_plus">
+    	<div class="left_cata">
+    		<img src="../image/畜类.png">
+    		<div class="left_cata_nav">
+    			<ul>
+    				<li><a href="">胫骨</a></li>
+    				<li><a href="">脊骨</a></li>
+    				<li><a href="">尾骨</a></li>
+    				<li><a href="">猪蹄</a></li>
+    				<li><a href="">三号肉</a></li>
+    				<li><a href="">前槽肉</a></li>
+    				<li><a href="">更多</a></li>
+    			</ul>
+    		</div>	
+    	</div>
+    	<div class="cata_main">
+    			<div class="item2"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item2"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item2"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item2"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item2"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item2"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item2"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item2"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item2"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item2"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    		</div>
+    </div>
+    <div class="branch">
+    	水产专区
+    	<div class="cata">
+    		<a href="">更多</a>
+    	</div>
+    </div>
+    <div class="branch_con_plus">
+    	<div class="left_cata">
+    		<img src="../image/水产.png">
+    		<div class="left_cata_nav">
+    			<ul>
+    				<li><a href="">鱼类</a></li>
+    				<li><a href="">贝类</a></li>
+    				<li><a href="">虾类</a></li>
+    				<li><a href="">蟹类</a></li>
+    				<li><a href="">鱿鱼类</a></li>
+    			</ul>
+    		</div>	
+    	</div>
+    		<div class="cata_main">
+    			<div class="item3"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item3"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item3"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item3"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item3"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item3"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item3"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item3"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item3"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item3"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    		</div>
+    </div>
+    <div class="branch">
+    	速冻食品
+    	<div class="cata">
+    		<a href="">更多</a>
+			<a href="">小东北</a>
+    		<a href="">科迪</a>
+			<a href="">思念</a>
+			<a href="">三全</a>
+    	</div>
+    </div>
+    <div class="branch_con_plus">
+    	<div class="left_cata">
+    		<img src="../image/速冻.png">
+    		<div class="left_cata_nav">
+    			<ul>
+    				<li><a href="">速冻水饺</a></li>
+    				<li><a href="">速冻馄饨</a></li>
+    				<li><a href="">速冻汤圆</a></li>
+    				<li><a href="">熟食调理</a></li>
+    				<li><a href="">其他速冻面食</a></li>
+    			</ul>
+    		</div>	
+    	</div>
+    		<div class="cata_main">
+    			<div class="item4"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item4"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item4"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item4"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item4"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item4"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item4"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item4"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item4"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item4"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    		</div>
+    </div>
+    <div class="branch">
+    	黑龙江省名优特绿色食品馆
+    </div>
+    <div class="branch_con_plus">
+    	<div class="left_cata">
+    		<img src="../image/绿色.png">
+    			
+    	</div>
+    	<div class="cata_main">
+    			<div class="item5"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item5"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item5"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item5"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item5"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item5"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item5"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item5"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item5"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    			<div class="item5"><div class="mark"><p><a href=""></a></p><span></span></div></div>
+    		</div>
+    </div>
+
+	<div id="footer" class="footer">
+		<div id="footer-main">
+			<div class="center">
+					
+				<div id="footer-main-left">
+					<ul>
+						<li class="footer-title">关于我们</li>
+						<li class="footer-li"><a href="yue/AboutUs.html#mao1">公司简介</a></li>
+						<li class="footer-li"><a href="yue/AboutUs.html#mao2">联系方式</a></li>
+						<li class="footer-li"><a href="yue/AboutUs.html#mao3">加盟入驻</a></li>
+					</ul>
+				</div>
+				<div id="footer-main-center">
+					<ul>
+						<li class="footer-title">客户保障</li>
+						<li class="footer-li"><a href="yue/baozhang.html#mao1">售后服务</a></li>
+						<li class="footer-li"><a href="yue/baozhang.html#mao2">支付方式</a></li>
+						<li class="footer-li"><a href="yue/baozhang.html#mao3">配送区域</a></li>
+					</ul>
+				</div>
+
+				<div id="footer-main-right">
+
+					<div class="pic"><span>扫描左侧二维码</span><br/><span>下载手机APP</span><br/><a href=""><img src="../image/ad.png" alt=""></a><a href=""><img src="../image/iphone.png" alt=""></a></div>
+					<div class="pic">
+						<span>联系方式</span><br/>
+						<a href=""><img class="top" src="../image/QQ.png" alt=""></a>	<a href=""><img class="top" src="../image/wechat.png" alt=""></a>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+
+		<div id="footer-bottom">
+		<div id="footer-line"></div>Copyright@2015&nbsp;快又省商贸公司&nbsp;版权所有&nbsp;黑ICP备15004530号&nbsp;食品流通许可证SP2301061510115075</div>
+	</div>
+</body>
+</html>
